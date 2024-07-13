@@ -1,0 +1,76 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
+:root{
+    --cor-background: #EBECEE;
+    --cor-branco: #ffffff;
+    --cor-laranja: #EB9B00;
+    --cor-azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --azul: #002F52;
+    --preto:#000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+
+}
+
+body{
+    background-color: var(--cor-background);
+    font-family: var(--fonte-principal);
+     font-size: 16px;
+     font-weight: 400;
+}
+
+.topicos{
+    background: var(--cor-azul-degrade);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topicos__titulo{
+    text-align: center;
+    font-weight: 300;
+    color: var(--cor-branco);
+    margin-bottom: 1em;
+}
+
+.topicos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos__item{
+    margin: 2em 0.5em;
+}
+.topicos__link{
+    text-decoration: none;
+    color:var(--cor-branco);
+    justify-content: center;
+    background-color: var(--cor-laranja);
+    padding:1em;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+@media screen and (min-width:1024px){
+    .topicos-titulos{
+        font-size: 24px;
+    }
+
+    .topicos_link{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width:1728px){
+    .topicos{
+        padding: 3em 30vw;
+    }
+}
